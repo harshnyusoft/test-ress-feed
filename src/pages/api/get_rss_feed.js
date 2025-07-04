@@ -2,7 +2,7 @@
 import { parseStringPromise } from 'xml2js';
 
 const fetchWithHeaders = async (url) => {
-	const response = await fetch("https://www.justice.gov/news/rss?f[0]=facet_topics:25356&m=1", {
+	const response = await fetch("https://www.justice.gov/news/rss", {
 		headers: {
 			"User-Agent": "Mozilla/5.0 (compatible; DemoNextApp/1.0; +https://test-ress-feed.vercel.app/)"
 		}
