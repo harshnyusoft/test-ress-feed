@@ -3,17 +3,13 @@ import { parseStringPromise } from 'xml2js';
 
 const fetchWithHeaders = async (url) => {
 	const response = await fetch(url, {
-		// headers: {
+		headers: {
+			"User-Agent": "Mozilla/5.0 (compatible; DemoNextApp/1.0; +https://test-ress-feed.vercel.app/)"
+		}
+
+				// headers: {
 		// 	"User-Agent": "Mozilla/5.0 (compatible; DemoNextApp/1.0; +https://taxworkoutgroup.com/)"
 		// }
-
-		headers: {
-			"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-			"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-			"Accept-Language": "en-US,en;q=0.5",
-			"Referer": "https://www.justice.gov/",
-			"Connection": "keep-alive"
-		}
 
 	});
 
